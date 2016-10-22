@@ -25,13 +25,13 @@ export default class Question extends React.Component {
     }
 
     check(value) {
-        let expected;
         const data = this.props.data;
-        if (data[2] === '+') {
-            expected = data[0] + data[1];
-        } else {
-            expected = data[0] - data[1];
-        }
+        // if (data[2] === '+') {
+        //     expected = data[0] + data[1];
+        // } else {
+        //     expected = data[0] - data[1];
+        // }
+        const expected = eval(data);
         if (value) {
             const correct = expected === +value;
             this.setState({
@@ -49,13 +49,13 @@ export default class Question extends React.Component {
         if (this.state.hasFocus) {
             className.push('has-focus');
         }
-        const data = this.props.data;
+        const tokens = this.props.data.split(' ');
         return (
             <div className={className.join(' ')}>
                 <div className="calculation">
-                    <div className="number">{data[0]}</div>
-                    {data[2]}
-                    <div className="number">{data[1]}</div>
+                    <div className="number">{tokens[0]}</div>
+                    {tokens[1]}
+                    <div className="number">{tokens[2]}</div>
                     =
                 </div>
                 <div className="answer">
