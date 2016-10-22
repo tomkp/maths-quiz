@@ -45,13 +45,13 @@ export default class Question extends React.Component {
     }
 
     render() {
-        const className = ['question'];
+        const className = ['Question'];
         if (this.state.hasFocus) {
             className.push('has-focus');
         }
         const data = this.props.data;
         return (
-            <li className={className.join(' ')}>
+            <div className={className.join(' ')}>
                 <div className="calculation">
                     <div className="number">{data[0]}</div>
                     {data[2]}
@@ -60,7 +60,7 @@ export default class Question extends React.Component {
                 </div>
                 <div className="answer">
                     <input
-                        tabIndex={this.props.index}
+                        tabIndex={this.props.index + 1}
                         className={this.state.status}
                         onFocus={() => this.onFocus()}
                         onBlur={(e) => {
@@ -70,12 +70,11 @@ export default class Question extends React.Component {
                         onKeyUp={(e) => {
                             if (e.keyCode === 13) {
                                 this.check(e.target.value);
-                                //e.target.(e.target.tabIndex++)
                             }
                         }}
                         />
                 </div>
-            </li>
+            </div>
         )
     }
 }

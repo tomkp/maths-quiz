@@ -7,9 +7,9 @@ import questions from '../questions'
 
 export default () => {
     return (
-        <ul className="questions">
+        <form className="Questions">
             { questions.map((data, index) => <Question key={index} index={index} data={data}/> )}
-        </ul>
+        </form>
     )
 };
 
