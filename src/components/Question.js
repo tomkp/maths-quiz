@@ -60,15 +60,16 @@ export default class Question extends React.Component {
                 </div>
                 <div className="answer">
                     <input
+                        tabIndex={this.props.index}
                         className={this.state.status}
                         onFocus={() => this.onFocus()}
                         onBlur={(e) => {
-                            this.offFocus()
-                            this.check(e.target.value)
+                            this.offFocus();
+                            this.check(e.target.value);
                         }}
                         onKeyUp={(e) => {
                             if (e.keyCode === 13) {
-                                this.check(e.target.value)
+                                this.check(e.target.value);
                                 //e.target.(e.target.tabIndex++)
                             }
                         }}
