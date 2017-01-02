@@ -9,7 +9,7 @@ import Questions from './components/Questions';
 const Application = () => {
     return (
         <div>
-            <h2>Maths Quiz</h2>
+            <h2>🌈 😁  💯 Maths Quiz! 💯  😁 🌈</h2>
             <Questions />
         </div>
     )
