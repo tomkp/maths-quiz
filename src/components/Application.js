@@ -1,7 +1,7 @@
 import React from 'react';
 import './application.css';
 
-import Questions from './Questions';
+import Questions from '../questions/Questions';
 
 
 const Application = () => {

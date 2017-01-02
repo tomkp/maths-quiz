@@ -1,7 +1,7 @@
 import React from 'react';
 import './questions.css';
 
-import Question from './Question';
+import Question from '../question/Question';
 
 import questions from '../questions'
 
