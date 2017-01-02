@@ -42,7 +42,7 @@ class Application extends Component {
     render() {
         return (
             <div className="Application">
-                <h2 onClick={() => this.toggle()}>🌈 😁  💯 Maths Quiz! 💯  😁 🌈</h2>
+                <h2 onClick={() => this.toggle()}> 😁  💯 Maths Quiz! 💯  😁 </h2>
                 {
                     this.state.edit &&
                     <TextPane questions={this.state.questions} update={this.update} />
