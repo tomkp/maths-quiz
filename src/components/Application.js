@@ -39,7 +39,6 @@ class Application extends Component {
         saveState(questions);
     }
 
-
     render() {
         return (
             <div className="Application">
@@ -52,7 +51,6 @@ class Application extends Component {
                     !this.state.edit &&
                     <Questions questions={this.state.questions} />
                 }
-
             </div>
         )
     }
