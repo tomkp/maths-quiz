@@ -49,7 +49,7 @@ export default class Question extends React.Component {
             <div className={className.join(' ')}>
                 <div className="calculation">
                     <div className="number">{tokens[0]}</div>
-                    {tokens[1]}
+                    <div className="symbol">{tokens[1]}</div>
                     <div className="number">{tokens[2]}</div>
                     =
                 </div>
