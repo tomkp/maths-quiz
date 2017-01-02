@@ -1,5 +1,5 @@
 import React from 'react';
-import './questions.scss';
+import './questions.css';
 
 import Question from './Question';
 

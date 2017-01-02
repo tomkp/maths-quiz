@@ -1,8 +1,9 @@
 import React from 'react';
 import { render } from 'react-dom';
-import '../styles.scss';
-import './application.scss';
-import Questions from './Questions';
+import './styles.css';
+import './application.css';
+
+import Questions from './components/Questions';
 
 
 const Application = () => {

@@ -1,5 +1,5 @@
 import React from 'react';
-import './question.scss';
+import './question.css';
 
 
 export default class Question extends React.Component {
