@@ -26,11 +26,6 @@ export default class Question extends React.Component {
 
     check(value) {
         const data = this.props.data;
-        // if (data[2] === '+') {
-        //     expected = data[0] + data[1];
-        // } else {
-        //     expected = data[0] - data[1];
-        // }
         const expected = eval(data);
         if (value) {
             const correct = expected === +value;

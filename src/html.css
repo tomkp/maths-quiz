@@ -12,3 +12,14 @@ body, html, #root {
   min-height: 100%;
   width: 100%;
 }
+
+
+#root {
+  display: flex;
+  flex-direction: column;
+}
+
+
+h2 {
+  text-align: center;
+}

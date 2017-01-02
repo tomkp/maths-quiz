@@ -1,0 +1,12 @@
+
+.TextPane {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.TextPane textarea {
+	flex: 1;
+    padding: 1rem;
+    line-height: 2;
+}
